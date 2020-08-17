@@ -26,6 +26,5 @@ class MQAM:
         yim=qam_img[k]*np.sin(2*math.pi*f*t)           # Quadrature or imagenary component 
         y=[a + b for a, b in zip(yr, yim)]
         m = m+y
-    
-    #m = awgn(m,snr);
+
     return m

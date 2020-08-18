@@ -5,8 +5,12 @@ import math
 
 class MQAM:
 
-  def modulation(self,msg,M):
-    qam = QAMModem(M)
+  def __init__(self, M ):
+        self.M=M
+
+
+  def modulation(self,msg):
+    qam = QAMModem(self.M)
     qam_constellation=qam.modulate(msg)
 
     qam_real = qam_constellation.real

@@ -1,3 +1,5 @@
+from setuptools import setup, find_packages
+
 setup(
     name='comm_sim',
     version='0.1',
